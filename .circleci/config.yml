@@ -1,14 +1,14 @@
 version: 2.1
 
-workflow:
+workflows:
   version: 2
   build:
     jobs:
       - build:
-        filters:
-          branches:
-            only:
-              - main
+          filters:
+            branches:
+              only:
+                - main
       - deploy:
           filters:
             branches:
